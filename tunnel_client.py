@@ -10,4 +10,4 @@ async def connect():
         async for message in websocket:
             print(f"Mensaje del servidor: {message}")
 
-asyncio.get_event_loop().run_until_complete(connect())
+asyncio.run(connect())
