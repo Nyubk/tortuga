@@ -4,7 +4,7 @@ import websockets
 TUNNEL_ID = "miproyecto123"
 
 async def connect():
-    uri = f"https://tortuga-9fhd.onrender.com:10000/register/{TUNNEL_ID}"
+    uri = f"wss://tortuga-9fhd.onrender.com:10000/register/{TUNNEL_ID}"
     async with websockets.connect(uri) as websocket:
         print(f"Túnel activo como {TUNNEL_ID}")
         async for message in websocket:
