@@ -1,2 +1,4 @@
+# Este archivo define la dependencias de mi proyecto
+
 websockets==11.0.3
 aiohttp==.3.9.1
