@@ -1,0 +1,10 @@
+services:
+  - type: web
+    name: tunnel-server
+    env: python
+    plan: free
+    buildCommand: pip install -r requirements.txt
+    startCommand: python tunnel_server.py
+    envVars:
+      - key: PORT
+        value: 10000
